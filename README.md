@@ -1,7 +1,42 @@
 # A simple Twitter-based API for PWA Workshop
 
 ## Prerequisites
+Docker, Docker Compose if running it inside a docker container.
+or
 Latest stable versions of `node`, `npm` installed. Having `yarn` installed is strongly recommended.
+
+# A - Setup for Docker
+
+## Install
+1. Clone the repo
+
+## Creating settings file
+1. Save `.env.template` as `.env` and open it in the editor
+
+## Getting Twitter credentials
+1. Go to [https://apps.twitter.com/app/new](https://apps.twitter.com/app/new) and create a new app. Website field - any valid URL
+2. Go to "Keys and Access Tokens" tab and click "Create my access token" button
+3. Use Consumer Key, Consumer Secret, Access Token, Access Token Secret to fill in the corresponding fields in `.env`
+
+## Getting VAPID credentials
+Go to [https://web-push-codelab.glitch.me/](https://web-push-codelab.glitch.me/) and use the newly generated Public and Private VAPID keys to fill in the corresponding fields in `.env`
+
+## Starting the app
+1. In the terminal
+```docker-compose up
+```
+You should see the output:
+```
+{
+  "level": "info",
+  "message": "Listening on port 3000"
+}
+```
+More information below.
+
+
+
+# B - Setup for Command-line
 
 ## Install
 1. Clone the repo
