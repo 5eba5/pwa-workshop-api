@@ -23,7 +23,8 @@ Go to [https://web-push-codelab.glitch.me/](https://web-push-codelab.glitch.me/)
 
 ### Starting the app
 1. In the terminal
-```docker-compose up
+```bash
+docker-compose up
 ```
 You should see the output:
 ```
